@@ -1,8 +1,8 @@
-This project is licenced with the mit license.
+This project is licenced with the apache 2.0 license.
 
-  <img src="https://img.shields.io/badge/license-mit-blue" alt="badge" />
+  <img src="https://img.shields.io/badge/license-apache%202.0-blue" alt="badge" />
 
-  # asdf
+  # Test README
   
   ## Table of Contents
   * [Title](#title)
@@ -15,7 +15,7 @@ This project is licenced with the mit license.
   * [Questions](#questions)
   
   ## Description
-  asfds
+  This is a test description for a professional README 
   
   ## Installation 
   To pull in dependencies, run:
@@ -31,16 +31,16 @@ This project is licenced with the mit license.
   This will initiate a series of prompts; once answered, the application will then generate a custom README within the output folder. 
   
   ## License
-  This application uses the mit license.
+  This application uses the apache 2.0 license.
 
-  <img src="https://img.shields.io/badge/license-mit-blue" alt="badge" />
+  <img src="https://img.shields.io/badge/license-apache%202.0-blue" alt="badge" />
 
   For more information: 
-  (https://choosealicense.com/licenses/mit/)
+  (https://choosealicense.com/licenses/apache-2.0/)
     
   
   ## Contributing
-  adsfa
+  No other users are able to contribute at this time
   
   ## Tests
   To test, within console, within the index.js file, please run: 
@@ -50,6 +50,6 @@ This project is licenced with the mit license.
   Once you follow and answer prompts, a generated markdown file will be created in the output folder.
   
   ## Questions
-  User email: sdaf
+  User email: Test Email
 
-  GitHub Link: https://github.com/asdf
+  GitHub Link: https://github.com/Zachattack221
