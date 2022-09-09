@@ -15,7 +15,7 @@ This project is licenced with the apache 2.0 license.
   * [Questions](#questions)
   
   ## Description
-  This is a test description for a professional README 
+  This is an example for central grading
   
   ## Installation 
   To pull in dependencies, run:
@@ -40,7 +40,7 @@ This project is licenced with the apache 2.0 license.
     
   
   ## Contributing
-  No other users are able to contribute at this time
+  No other users are able to contribute at this point
   
   ## Tests
   To test, within console, within the index.js file, please run: 
@@ -50,6 +50,6 @@ This project is licenced with the apache 2.0 license.
   Once you follow and answer prompts, a generated markdown file will be created in the output folder.
   
   ## Questions
-  User email: Test Email
+  User email: zsvd09@gmail.com
 
   GitHub Link: https://github.com/Zachattack221
