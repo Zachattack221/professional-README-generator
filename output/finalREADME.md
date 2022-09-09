@@ -1,8 +1,8 @@
-This project is licenced with the apache-2.0 license.
+This project is licenced with the mit license.
 
-  <img src="https://img.shields.io/badge/license-apache-2.0-blue" alt="badge" />
+  <img src="https://img.shields.io/badge/license-mit-blue" alt="badge" />
 
-  # fd
+  # asdf
   
   ## Table of Contents
   * [Title](#title)
@@ -15,7 +15,7 @@ This project is licenced with the apache-2.0 license.
   * [Questions](#questions)
   
   ## Description
-  d
+  asfds
   
   ## Installation 
   To pull in dependencies, run:
@@ -31,23 +31,25 @@ This project is licenced with the apache-2.0 license.
   This will initiate a series of prompts; once answered, the application will then generate a custom README within the output folder. 
   
   ## License
-  This application uses the apache-2.0 license.
-  <img src="https://img.shields.io/badge/license-apache-2.0-blue" alt="badge" />
+  This application uses the mit license.
+
+  <img src="https://img.shields.io/badge/license-mit-blue" alt="badge" />
+
   For more information: 
-  (https://choosealicense.com/licenses/apache-2.0/)
+  (https://choosealicense.com/licenses/mit/)
     
   
   ## Contributing
-  d
+  adsfa
   
   ## Tests
   To test, within console, within the index.js file, please run: 
   
   node index.js 
 
-  Once you follow and answer prompts, a generated markdown file will be created in the output folder as template.md
+  Once you follow and answer prompts, a generated markdown file will be created in the output folder.
   
   ## Questions
-  User email: d
+  User email: sdaf
 
-  GitHub Link: https://github.com/d
+  GitHub Link: https://github.com/asdf

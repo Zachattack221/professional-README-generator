@@ -1,14 +1,16 @@
 //  Created a function that returns a license badge based on which license is passed in
 const renderLicenseBadge = (license) => {
   let color = 'blue';
-  return `<img src="https://img.shields.io/badge/license-${license}-${color}" alt="badge" />`;
+  const encoded = encodeURIComponent(license);
+  return `<img src="https://img.shields.io/badge/license-${encoded}-${color}" alt="badge" />`;
 };
 
 // Created a function that returns the license link
 
 const renderLicenseLink = (license) => {
+  const encoded = license.replace(/\s/g,'-');
   return  `
-  (https://choosealicense.com/licenses/${license}/)
+  (https://choosealicense.com/licenses/${encoded}/)
     `;
 };
 
@@ -52,7 +54,7 @@ module.exports = (answers) => {
   This application uses the ${answers.license} license.
 
   ${renderLicenseBadge(answers.license)}
-  
+
   For more information: ${renderLicenseLink(answers.license)}
   
   ## Contributing
@@ -63,7 +65,7 @@ module.exports = (answers) => {
   
   node index.js 
 
-  Once you follow and answer prompts, a generated markdown file will be created in the output folder as template.md
+  Once you follow and answer prompts, a generated markdown file will be created in the output folder.
   
   ## Questions
   User email: ${answers.email}

@@ -10,17 +10,12 @@ prompt(questions).then((answers) => {
     if (!fs.existsSync('output')) {
         fs.mkdirSync('output');
     }
-          fs.writeFileSync('output/template.md', template);
+          fs.writeFileSync('output/finalREADME.md', template);
     });
 
-
-// // TODO: Create a function to write README file
-// function writeToFile(template.md, data) {}
-
-// // TODO: Create a function to initialize app
 const init = () => {
     return prompt;
 };
 
-// // Function call to initialize app
+// Function call to initialize app
 init();
