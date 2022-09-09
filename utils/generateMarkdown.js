@@ -1,27 +1,24 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+//  Created a function that returns a license badge based on which license is passed in
 const renderLicenseBadge = (license) => {
   let color = 'blue';
   return `<img src="https://img.shields.io/badge/license-${license}-${color}" alt="badge" />`;
-}
+};
 
-// // TODO: Create a function that returns the license link
-// // If there is no license, return an empty string
-// function renderLicenseLink(license) {}
+// Created a function that returns the license link
 
-// // TODO: Create a function that returns the license section of README
-// // If there is no license, return an empty string
-// function renderLicenseSection(license) {}
+const renderLicenseLink = (license) => {
+  return  `
+  (https://choosealicense.com/licenses/${license}/)
+    `;
+};
 
-// // TODO: Create a function to generate markdown for README
-// function generateMarkdown(data) {
-//   return `# ${data.title}
 
-// `;
-// }
+// Created a function to generate markdown for README
 
 module.exports = (answers) => {
-  return `'This project is licenced with the ${answers.license} license'
+  return `This project is licenced with the ${answers.license} license.
+
+  ${renderLicenseBadge(answers.license)}
 
   # ${answers.title}
   
@@ -41,18 +38,22 @@ module.exports = (answers) => {
   ## Installation 
   To pull in dependencies, run:
   
-   npm init -y
+   ${answers.installation}
   
   Then to pull v8.2.4 of inquirer, run:
   
   npm install inquirer@8.2.4
   
   ## Usage
-  To use this application, navigate to the index.js file and run 'node index.js" within the terminal. 
+  To use this application, navigate to the index.js file and run ${answers.usage} within the terminal. 
   This will initiate a series of prompts; once answered, the application will then generate a custom README within the output folder. 
   
   ## License
+  This application uses the ${answers.license} license.
+
+  ${renderLicenseBadge(answers.license)}
   
+  For more information: ${renderLicenseLink(answers.license)}
   
   ## Contributing
   ${answers.contributing}
@@ -66,5 +67,6 @@ module.exports = (answers) => {
   
   ## Questions
   User email: ${answers.email}
+
   GitHub Link: https://github.com/${answers.gitHub}`
 };
