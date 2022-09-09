@@ -17,8 +17,8 @@ module.exports = [
     // },
     {
         name: 'license',
-        type: 'checkbox',
-        message: 'This project is licenced with the ${} license',
+        type: 'rawlist',
+        message: 'Please choose a license type from the options provided.',
         choices: [
             '',
             '',

@@ -1,6 +1,9 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-// function renderLicenseBadge(license) {}
+const renderLicenseBadge = (license) => {
+  let color = 'blue';
+  return `<img src="https://img.shields.io/badge/license-${license}-${color}" alt="badge" />`;
+}
 
 // // TODO: Create a function that returns the license link
 // // If there is no license, return an empty string
@@ -18,9 +21,9 @@
 // }
 
 module.exports = (answers) => {
-  return `<!-- Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions -->
-  # Title
-  ${answers.title}
+  return `'This project is licenced with the ${answers.license} license'
+
+  # ${answers.title}
   
   ## Table of Contents
   * [Title](#title)
@@ -45,18 +48,21 @@ module.exports = (answers) => {
   npm install inquirer@8.2.4
   
   ## Usage
-  
+  To use this application, navigate to the index.js file and run 'node index.js" within the terminal. 
+  This will initiate a series of prompts; once answered, the application will then generate a custom README within the output folder. 
   
   ## License
   
   
   ## Contributing
-  
+  ${answers.contributing}
   
   ## Tests
-  To test application, please run: 
+  To test, within console, within the index.js file, please run: 
   
-  npm test
+  node index.js 
+
+  Once you follow and answer prompts, a generated markdown file will be created in the output folder as template.md
   
   ## Questions
   User email: ${answers.email}
