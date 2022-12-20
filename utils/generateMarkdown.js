@@ -42,13 +42,13 @@ module.exports = (answers) => {
   
    ${answers.installation}
   
-  Then to pull v8.2.4 of inquirer, run:
+  This application uses v8.2.4 of inquirer; to install run:
   
   npm install inquirer@8.2.4
   
   ## Usage
   To use this application, navigate to the index.js file and run ${answers.usage} within the terminal. 
-  This will initiate a series of prompts; once answered, the application will then generate a custom README within the output folder. 
+  This will initiate a series of prompts. Once answered, the application will then generate a custom README within the output folder. 
   
   ## License
   This application uses the ${answers.license} license.
@@ -65,7 +65,7 @@ module.exports = (answers) => {
   
   node index.js 
 
-  Once you follow and answer prompts, a generated markdown file will be created in the output folder.
+  The user then will be presented with a series of prompts. When completed a newly generated markdown file will be created in the output folder, available to save/export as a dedicated README file for another project.
   
   ## Questions
   User email: ${answers.email}
